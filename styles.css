@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary: #eb5e28;
+  --dark-primary: #ca3a16;
+  --secondary: #252422;
+  --terciary: #403d39;
+  --gray: #ccc5b9;
+  --light-gray: #d3d3d3;
+  --white: #fff;
+  --black: #0b090a;
+  --text: #333;
+
+  --error: #ba181b;
+  --successful: #80b918;
+  --system: #ffd60a;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+/* Inicio Globales */
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+/* Fin Globales */
+
+/* Inicio Generales */
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none !important;
+  transition: 0.3s;
+}
+
+.container {
+  width: 80%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--white);
+}
+
+.heading {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  color: var(--primary);
+  border-bottom: 0.5rem solid var(--primary);
+}
+
+.card-container {
+  width: 100%;
+  padding: 1rem;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 33.3%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--white);
+  background: var(--terciary);
+}
+
+.card-header {
+  width: 100%;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-align: start;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.card-combobox {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--white);
+  color: var(--text);
+}
+
+.card-combobox option {
+  text-transform: capitalize;
+}
+
+.card-buttons {
+  gap: 1rem;
+}
+
+.card-input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--secondary);
+  border: none;
+}
+
+.card-input:focus {
+  outline: 0.2rem solid var(--primary);
+}
+
+.card-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--white);
+  background: var(--primary);
+}
+
+.card-btn:hover {
+  background: var(--dark-primary);
+}
+
+.item-list {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.item-list li {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.item-list li:hover {
+  color: var(--primary);
+}
+
+/* Fin Generales */

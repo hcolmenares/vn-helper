@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Visual Novel Helper</title>
+  </head>
+
+  <body>
+    <div class="container column">
+      <h2 class="heading">Visual novel - Helper</h2>
+
+      <div class="card-container row">
+        <div id="scenario-card" class="card column">
+          <h3 class="card-header">Scenario</h3>
+          <div class="card-body column">
+            <div class="card-buttons row">
+              <input
+                type="text"
+                class="card-input"
+                placeholder="Add scenario"
+                id="scenario"
+              />
+              <button class="card-btn" data-card-id="scenario">Add</button>
+            </div>
+            <ul id="scenario-list" class="item-list column"></ul>
+          </div>
+        </div>
+
+        <div id="characters-card" class="card column hidden">
+          <h3 class="card-header">Characters</h3>
+          <div class="card-body column">
+            <select name="scenario" id="scenario-box" class="card-combobox"></select>
+            <div class="card-buttons row">
+              <input
+                type="text"
+                class="card-input"
+                placeholder="Add character"
+                id="characters"
+              />
+              <button class="card-btn" data-card-id="characters">Add</button>
+            </div>
+            <ul id="characters-list" class="item-list column"></ul>
+          </div>
+        </div>
+
+        <div id="traits-card" class="card column hidden">
+          <h3 class="card-header">Characters traits</h3>
+          <div class="card-body column">
+            <div class="card-buttons row">
+              <input
+                type="text"
+                class="card-input"
+                placeholder="Add traits"
+                id="traits"
+              />
+              <button class="card-btn" data-card-id="traits">Add</button>
+            </div>
+            <ul id="traits-list" class="item-list column"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
